@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("https://wallpapershome.com/images/pages/pic_h/19568.jpg");
+
+        /* Full height */
+        height: 1000%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: Full;
+      }
+
+      .select {
+        width: 70px;
+        margin: auto;
+        border: 3px solid #269454;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Hacktiv Sesi Ke 2</title>
+
+    <script>
+      function itung() {
+        var bil1 = parseInt(document.getElementById("input1").value);
+        var bil2 = parseInt(document.getElementById("input2").value);
+
+        var perhitungan = document.getElementById("hitung").value;
+
+        if (perhitungan === "+") {
+          document.getElementById("hasil").value = bil1 + bil2;
+        }
+
+        if (perhitungan === "-") {
+          document.getElementById("hasil").value = bil1 - bil2;
+        }
+
+        if (perhitungan === "/") {
+          document.getElementById("hasil").value = bil1 / bil2;
+        }
+
+        if (perhitungan === "X") {
+          document.getElementById("hasil").value = bil1 * bil2;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container" align="center">
+      <div class="card" style="width:500px">
+        <div class="form-group">
+          <input
+            type="text"
+            id="input1"
+            style="text-align: center;"
+            placeholder="masukan angka pertama"
+            ;
+          /><br /><br />
+          <input
+            type="text"
+            id="input2"
+            style="text-align: center;"
+            placeholder="masukan angka kedua"
+            ;
+          /><br /><br />
+          <div class="select">
+            <select id="hitung" class="form-control">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="X">X</option>
+              <option value="/">/</option>
+            </select>
+          </div>
+          <br />
+          <br />
+
+          <button onclick="itung();">=</button> <br />
+
+          <br />
+          <input
+            type="text"
+            id="hasil"
+            style="text-align: center;"
+            placeholder="hasil"
+            ;
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
